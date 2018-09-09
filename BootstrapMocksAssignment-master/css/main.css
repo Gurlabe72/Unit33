@@ -1,0 +1,66 @@
+
+/* only one css sheet to manipulate the elements on all three htmls */
+/* --------------Png3.html------------------------ */
+/* use dot notation so that css knows to find a "class" in the html  */
+.left {
+    width: 5px;
+    height: 100%;
+    float:left;
+    padding-left: 6%;
+    padding-top: 5%;
+    /* all of the styling was done to position the sidebar in
+    the part of the page that I wanted it to be on.
+    The problem that I came across was that manipulating the side
+    bar did not subsuently change the elements that were right next to it
+    ending in text being overlapped  */
+}
+/* --------------Png1.htmlPng2.htmlPng3.html------------------------ */
+body {
+    border-style: double;
+    border-color:black;
+    max-width: 100%;
+    max-height: 100%;
+    /* this created a border around the body of all three web pages 
+    since body can be found in all three pages  */
+}
+/* --------------Png1.html------------------------ */
+
+/*this separate tag is used to keep the tables separated in png1.html
+I used a double border to sperarate them as per the assignment */
+.separate { 
+    border-style: double;
+    border-color:black ;    
+    padding-left:6%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: orange;
+    text-align: center;
+}
+/* --------------Png3.html------------------------ */
+
+/* I changed this spearate class to spearate2 so that I can show
+that it is similar to separate however, if i used the same css styling as 
+i did for the first one, then i wouldve had a border split my page
+. this styling excludes that border and also shifts the text that was 
+overlapping the html */
+.separate2 {  
+    padding-left:6%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: orange;
+    text-align: center;
+
+} 
+/* --------------Png2.html------------------------ */
+
+.table1 {
+    padding-left:6%;
+}
+/* --------------Png3.html------------------------ */
+
+.table2 {
+    padding-left:6%;
+}
+
+/* i used 6% padding on everything because my text was over lapping
+from element to element
+I figured that if I padded them all the same size, then they would
+be equally separerted from each other */
